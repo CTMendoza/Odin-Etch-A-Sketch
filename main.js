@@ -6,3 +6,16 @@ for(i = 0; i < 256; i++) {
     square.className= 'square';
     container.appendChild(square);
 }
+
+ function toggleDraw (square) {
+    if(!square.style.backgroundColor) {
+        square.style.backgroundColor = 'black';
+    } else square.style.backgroundColor = '';
+ }
+// create listener for hover event on each "square" div
+const squares = container.querySelectorAll('div.square');
+squares.forEach((square) => { square.addEventListener('mouseover', () => {
+    // change "square" backgroundColor when hovered over
+    // square.style.backgroundColor = 'black';
+    toggleDraw(square);
+})});
