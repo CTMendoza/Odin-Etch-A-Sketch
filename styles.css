@@ -14,8 +14,12 @@ body {
     border: 1px solid #000;
 }
 
+#bttn {
+
+}
+
 .square {
     box-sizing: border-box;
-    flex-basis: calc(100%/16);
+    /* flex-basis: calc(100%/16); */
     border: 1px solid #ccc;
 }
