@@ -10,7 +10,8 @@ for(i = 0; i < 256; i++) {
  function toggleDraw (square) {
     if(!square.style.backgroundColor) {
         square.style.backgroundColor = 'black';
-    } else square.style.backgroundColor = '';
+    }
+    //  else square.style.backgroundColor = '';
  }
 // create listener for hover event on each "square" div
 const squares = container.querySelectorAll('div.square');
